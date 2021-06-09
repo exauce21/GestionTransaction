@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="629.0" prefWidth="579.0" style="-fx-background-color: #fff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="examenclient.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane layoutX="61.0" layoutY="43.0" prefHeight="548.0" prefWidth="471.0" style="-fx-background-color: #F7F7F7;">
+         <children>
+            <Label layoutX="43.0" layoutY="67.0" prefHeight="19.0" prefWidth="48.0" text="Code">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="187.0" prefHeight="19.0" prefWidth="69.0" text="Num Exp">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="128.0" prefHeight="19.0" prefWidth="76.0" text="Montant">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="265.0" prefHeight="19.0" prefWidth="69.0" text="Nom Exp">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="328.0" prefHeight="19.0" prefWidth="76.0" text="Num Dest">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="404.0" prefHeight="19.0" prefWidth="76.0" text="Nom Dest">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="code" layoutX="136.0" layoutY="51.0" prefHeight="25.0" prefWidth="235.0" />
+            <JFXTextField fx:id="montant" layoutX="136.0" layoutY="112.0" onMouseMoved="#transactionInfo" prefHeight="25.0" prefWidth="235.0" />
+            <JFXTextField fx:id="numExp" layoutX="136.0" layoutY="178.0" onMouseMoved="#transactionInfo" prefHeight="25.0" prefWidth="235.0" />
+            <JFXTextField fx:id="nomExp" layoutX="137.0" layoutY="249.0" onMouseMoved="#transactionInfo" prefHeight="25.0" prefWidth="235.0" />
+            <JFXTextField fx:id="numDest" layoutX="136.0" layoutY="320.0" prefHeight="25.0" prefWidth="235.0" />
+            <JFXTextField fx:id="nomDest" layoutX="134.0" layoutY="396.0" onMouseMoved="#transactionInfo" prefHeight="25.0" prefWidth="235.0" />
+            <JFXButton layoutX="154.0" layoutY="483.0" onAction="#Ajouter" prefHeight="37.0" prefWidth="156.0" style="-fx-background-color: #875AFF;" text="Enregistrer" textFill="WHITE" />
+            <Label fx:id="notifier" layoutX="46.0" layoutY="443.0" prefHeight="19.0" prefWidth="278.0" textFill="#1ae15c">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
